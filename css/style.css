@@ -2,12 +2,6 @@ h1 {
 	text-align: center;
 }
 
-.wrapper {
-	max-width: 1200px;
-	padding: 0 16px;
-	margin: auto;
-}
-
 .navbar {
 	padding: 20px;
 	margin-bottom: 20px;
@@ -28,8 +22,7 @@ h1 {
 }
 
 .navbar-brand:hover, .create:hover {
-	color: #fff;
-	
+	color: rgba(255, 255, 255, 0.8);
 }
 
 .form-container {
@@ -43,7 +36,5 @@ h1 {
 }
 
 .grid {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	-ms-grid-row-align: 10px;
+	padding-top: 1rem;
 }
