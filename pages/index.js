@@ -7,10 +7,10 @@ const Index = ({ notes }) => {
 	return (
 		<div className="notes-container">
 			<h1>Notes</h1>
-			<div className="grid">
+			<div className="grid wrapper">
 				<Grid columns={col} divided centered>
 				{notes.map((note) => (
-					<div key={note._id}>
+					<div key={note._id} className="grid">
 						<Card>
 							<Card.Content>
 								<Card.Header>
