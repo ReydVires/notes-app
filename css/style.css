@@ -35,6 +35,11 @@ h1 {
 	margin-top: 20px;
 }
 
+.wrapper {
+	max-width: 1200px;
+	margin: auto;
+}
+
 .grid {
-	padding-top: 1rem;
+	padding: 0.5rem 1rem;
 }
