@@ -10,6 +10,7 @@ async function dbConnect () {
 		useNewUrlParser: true,
 		useUnifiedTopology: true,
 	});
+	mongoose.set("useFindAndModify", false);
 
 	connection.isConnected = mongoose.connection.readyState;
 }
