@@ -3,12 +3,11 @@ import fetch from "isomorphic-unfetch";
 import { Button, Card, Grid } from "semantic-ui-react";
 
 const Index = ({ notes }) => {
-	const col = 3;
 	return (
 		<div className="notes-container">
 			<h1>Notes</h1>
 			<div className="grid wrapper">
-				<Grid columns={col} divided centered>
+				<Grid divided centered>
 				{notes.map((note) => (
 					<div key={note._id} className="grid">
 						<Card>
