@@ -9,8 +9,9 @@ async function dbConnect () {
 	await mongoose.connect(process.env.MONGO_URI, {
 		useNewUrlParser: true,
 		useUnifiedTopology: true,
+		useCreateIndex: true,
+		useFindAndModify: false
 	});
-	mongoose.set("useFindAndModify", false);
 
 	connection.isConnected = mongoose.connection.readyState;
 }
